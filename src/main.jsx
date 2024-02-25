@@ -17,10 +17,12 @@ const router = createBrowserRouter([
   {
     path: "/profiles",
     element: <ProfilesPage />,
-  },
-  {
-    path: "/profiles/:username",
-    element: <ProfilePage />,
+    children: [
+      {
+        path: "/profiles/:username",
+        element: <ProfilePage />,
+      },
+    ],
   },
 ]);
 
