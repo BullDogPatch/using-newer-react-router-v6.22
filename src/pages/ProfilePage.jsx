@@ -12,8 +12,9 @@ const ProfilePage = () => {
   });
 
   const dataIntoObject = { ...data };
+
   // TODO: fix loading state and where the loading for single user happens
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div></div>;
 
   return (
     <>

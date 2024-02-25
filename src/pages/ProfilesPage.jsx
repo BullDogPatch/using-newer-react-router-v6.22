@@ -11,6 +11,7 @@ const ProfilesPage = () => {
   return (
     <div className="pt-10 flex flex-col">
       {data?.map(({ name, username }) => (
+        // fix styling on acitve class, finding tailwind difficult
         <NavLink to={`/profiles/${username}`} key={name}>
           {name}
         </NavLink>
