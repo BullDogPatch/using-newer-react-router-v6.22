@@ -21,7 +21,7 @@ const ProfilePage = () => {
 
   return (
     <>
-      <img src={number} alt="" style={{ width: "500px" }} />
+      <img src={number} alt="avatar" style={{ width: "500px" }} />
       {<h2 className="text-2xl text-slate-200">{data[0].name}</h2>}
       {<p>{data[0].address.city}</p>}
     </>
