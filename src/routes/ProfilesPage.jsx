@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchUsers } from "../utils/utils";
 import { NavLink, Outlet } from "react-router-dom";
+import Home from "./Home";
 
 const ProfilesPage = () => {
   const { data, isLoading } = useQuery({
