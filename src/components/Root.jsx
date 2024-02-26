@@ -1,8 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Profiles from "../routes/Profiles";
 
 const Root = () => {
   return (
-    <div>
+    <div className="flex">
+      <Profiles />
       <Outlet />
     </div>
   );
