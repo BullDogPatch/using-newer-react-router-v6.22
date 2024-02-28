@@ -18,14 +18,12 @@ const ProfilePage = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div>
-          <h2 className="text-2xl text-slate-200 py-2 hover:text-gray-900">
-            {data[0].name}
-          </h2>
+      <div className="min-w-[80%] flex justify-center bg-gray-dark">
+        <div className="h-screen flex  flex-col justify-center">
+          <h2 className="text-2xl text-slate-200 py-2">{data[0].name}</h2>
           <p className="py-1"> City: {data[0].address.city}</p>
           <address>
-            <p className="text-sky-400">
+            <p className="font-bold">
               Street: <span>{data[0].address.street}</span>
             </p>
             <p>

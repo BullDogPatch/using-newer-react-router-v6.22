@@ -9,14 +9,14 @@ const Profiles = () => {
   });
   if (isLoading) return <div>Loading...</div>;
   return (
-    <div className="pt-10 flex flex-col">
+    <div className="min-w-[20%] pt-10 flex flex-col items-center">
       {data?.map(({ name, username }) => (
         // fix styling on acitve class, finding tailwind difficult
         <NavLink
           className={({ isActive }) =>
             [
-              "flex items-center px-2 py-2 text-base font-medium rounded-md",
-              isActive ? "text-orange bg-gray-dark" : "",
+              "w-56 px-2 py-2 text-base font-medium rounded-md hover:text-orange hover:bg-gray-dark",
+              isActive ? "text-orange bg-gray-light" : "",
             ].join(" ")
           }
           to={`/profiles/${username}`}
