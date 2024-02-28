@@ -3,7 +3,7 @@ import Profiles from "../routes/Profiles";
 
 const Root = () => {
   return (
-    <div className="h-full flex">
+    <div id="wrapper" className="flex min-h-screen">
       <Profiles />
       <Outlet />
     </div>

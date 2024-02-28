@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchUserByUsername } from "../utils/utils";
 import maleImage from "../assets/malepic.png";
 import femaleImage from "../assets/femalepic.png";
+import Loading from "../components/Loading";
 
 const ProfilePage = () => {
   const { username } = useParams();
@@ -13,8 +14,9 @@ const ProfilePage = () => {
 
   const dataIntoObject = { ...data };
 
-  // TODO: fix loading state and where the loading for single user happens
-  if (isLoading) return <div>loading</div>;
+  // TODO: fix loading state to maybe do a transition on first fetch instead of
+  //     making a flicker
+  if (isLoading) return <Loading />;
 
   return (
     <>
